@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 require('dotenv').config({
-	path: `.env.auto2`
+	path: `.env.auto`
 });
 
 /**
@@ -38,8 +38,14 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'setup',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: '*setup/*.ts'
+    },
+    {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+      dependencies: ['setup'],
     },
 
     // {
