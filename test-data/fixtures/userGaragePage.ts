@@ -9,9 +9,16 @@ let loginModal: LoginModal;
 let garagePage: GaragePage;
 let addCarModal: AddCarModal;
 
+
+
 export const test = base.extend({
-  garagePageAsLoggedUser: async ({ page }, use) => {
+  garagePageAsLoggedUser: async ({ browser }, use) => {
     // await page.goto("/");
+    const context = await browser.newContext({
+      storageState: "./test-data/states/userOne.json",
+    });
+
+    const page = await context.newPage();
 
     homePage = new HomePage(page);
     loginModal = new LoginModal(page);
@@ -25,6 +32,9 @@ export const test = base.extend({
     // await loginModal.clickSubmitLoginButton();
     await garagePage.openPage();
 
-    await use(addCarModal);
+    await use({garagePage, addCarModal});
+
+    await page.close();
+    await context.close();
   },
 });

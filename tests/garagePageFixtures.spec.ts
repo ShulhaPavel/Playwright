@@ -1,16 +1,22 @@
 import {expect, Locator, chromium } from "@playwright/test";
-import { test } from "../test-data/fixtures/fixturesBase";
+import { test } from "../test-data/fixtures/userGaragePage";
+
 
 test.describe("Garage page with Fixtures", () => {
-    test.use({storageState: './test-data/states/userOne.json'})
+  test("User is logged in and sees Garage page", async ({ garagePageAsLoggedUser }) => {
+    const { garagePage } = garagePageAsLoggedUser;
+    await expect(garagePage.header).toHaveText("Garage");
+  });
 
   test("Add a car in garage Page", async ({ garagePageAsLoggedUser}) => {
-    await garagePageAsLoggedUser.addCarByBrandAndModel('Porsche', '911');
-    expect('Porsche 911').toBe(await garagePageAsLoggedUser.getLastAddedCarName());
+    const { addCarModal } = garagePageAsLoggedUser;
+    await addCarModal.addCarByBrandAndModel('Porsche', '911');
+    expect('Porsche 911').toBe(await addCarModal.getLastAddedCarName());
   });
 
   test("Update new added car", async ({ garagePageAsLoggedUser}) => {
-    await garagePageAsLoggedUser.updateCarMileage("5555");
-    expect("5555").toBe(await garagePageAsLoggedUser.getUpdatedMileageField());
+    const { addCarModal } = garagePageAsLoggedUser;
+    await addCarModal.updateCarMileage("5555");
+    expect(await addCarModal.getUpdatedMileageField()).toBe("5555");
   });
 });

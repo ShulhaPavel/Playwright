@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "YSC",
-      "value": "xF9JaHaszSw",
+      "value": "lZ1DQ7qzHW0",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
@@ -11,51 +11,51 @@
       "sameSite": "None"
     },
     {
-      "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "CMjG74rd8oec8QEQzb75t7WYiwMYzb75t7WYiwM%3D",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1753619349.964649,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "VISITOR_INFO1_LIVE",
-      "value": "Ln5kZcNe8IA",
+      "value": "e_5PvjGbzW4",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1753619349.964685,
+      "expires": 1753713279.134608,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJVQRIEGgAgUw%3D%3D",
+      "value": "CgJVQRIEGgAgbg%3D%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1753619349.964695,
+      "expires": 1753713279.134661,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Secure-ROLLOUT_TOKEN",
+      "value": "CLix2cbn9JiK6AEQzYLArJObiwMYzYLArJObiwM%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1753713279.134676,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "NID",
-      "value": "521=LvJ0Mvh2EjVoKIpOgdiLz_bNXNrWct3jIid7Z0nrHykhJJYAtakfanlZbyLy56YXI7rRWpp-gPxUaLmM3P_F7ySJO8NaQD4PHIDbcK3oYcHtaikjdRLhXqb_dc3oXfJGh3HqX5AWeFuhrIxlz2BgQvTsFGaToy9M1PMi3-Y4vmH2IacYEx_gtDuBlIQ",
+      "value": "521=UtRbhZba4-khMK2HV1gQJarTLB1S1RnBaw3TvWSipcxfYvPzjChtUkB6nvlv8j9P9F_rC6OB39vviyR_f6ETCSob-ATWReNLtPu-urm37YoRCnq7y4o0wIRpR6jO6QYv_xpIa75xf0txhZ5IIT0-CFyEj58yK2WbN_fVrFBT29NxFvaeLwB6tbgRR7c",
       "domain": ".google.com",
       "path": "/",
-      "expires": 1753878550.555574,
+      "expires": 1753972479.705146,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "sid",
-      "value": "s%3ActkCDMpmYG7mwPVojn_K9kj2eSPf0GB1.hRmo%2BBwfIKhbNaKohYlplQfXv3szgxLLnSBHTJCNYeE",
+      "value": "s%3AtOosI8yKEkqGNi-ZpGmZWmoBZwJ4b3AV.IrpfcZPohKxnfoaYnoL6ZEKp6mTPHV1veYQ8E0hVz5c",
       "domain": ".forstudy.space",
       "path": "/",
-      "expires": 1738153750.856933,
+      "expires": 1738247680.070613,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -67,7 +67,7 @@
       "localStorage": [
         {
           "name": "ytidb::LAST_RESULT_ENTRY_KEY",
-          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1740659350256,\"creation\":1738067350256}"
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1740753279429,\"creation\":1738161279429}"
         }
       ]
     }
