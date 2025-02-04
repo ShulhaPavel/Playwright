@@ -48,6 +48,12 @@ export default defineConfig({
       dependencies: ['setup'],
     },
 
+    {
+      name: 'api-tests',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: '*api/*.ts'
+    },
+
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
